@@ -35,6 +35,11 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--timeout", type=float, default=DEFAULT_TIMEOUT, help=f"Request timeout seconds (default: {DEFAULT_TIMEOUT}).")
     parser.add_argument(
+        "--out",
+        metavar="PATH",
+        help="Optional file path to also write the JSON report (always printed to stdout).",
+    )
+    parser.add_argument(
         "--contains",
         help="Optional substring to search for in the fetched body (UTF-8), recorded as a boolean in the report.",
     )
@@ -261,6 +266,7 @@ def build_report(args: argparse.Namespace) -> Dict[str, object]:
 
 def main() -> int:
     args = parse_args()
+    report: Dict[str, object]
     try:
         report = build_report(args)
     except Exception as exc:  # pragma: no cover - defensive
@@ -278,7 +284,11 @@ def main() -> int:
             "fetch": {"error": f"unexpected error: {exc}"},
         }
 
-    print(json.dumps(report, indent=2, sort_keys=True))
+    report_json = json.dumps(report, indent=2, sort_keys=True)
+    print(report_json)
+    if args.out:
+        with open(args.out, "w", encoding="utf-8") as fp:
+            fp.write(report_json + "\n")
     return 0
 
 
