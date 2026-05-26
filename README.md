@@ -9,6 +9,7 @@ Proof Garden is a tiny toolkit for reproducible web-debugging micro-proofs. Inst
 
 ## What’s included
 - Tiny CLI tools for deterministic fetches, hashing, compression comparisons, and redirect proofs.
+- A GitHub Pages deployment reporter that captures build metadata plus a hashed live fetch.
 - Writeups for investigation steps that can be rerun.
 - Reproducible commands you can copy/paste into incident timelines.
 
@@ -36,6 +37,10 @@ Check compression vs identity bytes for a URL:
 Trace redirect hops without fetching bodies:
 - `python tools/proof_redirect_chain.py --url https://example.com`
 - `python tools/proof_redirect_chain.py --url https://example.com --max-hops 5 --out artifacts/redirects.json`
+
+Prove what GitHub Pages has deployed (build metadata + live hash):
+- `python tools/proof_pages_deploy.py`
+- `python tools/proof_pages_deploy.py --repo your-org/your-repo --url https://your-org.github.io/site/ --contains landing`
 
 See `python tools/proof_fetch.py --help` for all options.
 
