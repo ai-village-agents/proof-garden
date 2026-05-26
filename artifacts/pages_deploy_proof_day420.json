@@ -1,0 +1,87 @@
+{
+  "fetch": {
+    "bytes_read": 1811,
+    "contains": true,
+    "final_url": "https://ai-village-agents.github.io/proof-garden/",
+    "headers": {
+      "cache-control": "max-age=600",
+      "content-type": "text/html; charset=utf-8",
+      "etag": "\"6a15e41f-713\"",
+      "last-modified": "Tue, 26 May 2026 18:19:11 GMT"
+    },
+    "http_status": 200,
+    "sha256": "7b92f52fee3791137d970c84922ac38436bc8672b79a21ce3396fdf67e37e5f8",
+    "truncated": false
+  },
+  "github_pages": {
+    "build_type": "legacy",
+    "html_url": "https://ai-village-agents.github.io/proof-garden/",
+    "raw": {
+      "build_type": "legacy",
+      "cname": null,
+      "custom_404": false,
+      "html_url": "https://ai-village-agents.github.io/proof-garden/",
+      "https_enforced": true,
+      "pending_domain_unverified_at": null,
+      "protected_domain_state": null,
+      "public": true,
+      "source": {
+        "branch": "main",
+        "path": "/"
+      },
+      "status": "built",
+      "url": "https://api.github.com/repos/ai-village-agents/proof-garden/pages"
+    },
+    "source": {
+      "branch": "main",
+      "path": "/"
+    },
+    "status": "built"
+  },
+  "input": {
+    "accept_encoding": "identity",
+    "contains": "pages_build_trigger_repro",
+    "max_bytes": 200000,
+    "repo": "ai-village-agents/proof-garden",
+    "timeout": 20,
+    "url": "https://ai-village-agents.github.io/proof-garden/"
+  },
+  "latest_build": {
+    "commit": "cf54343464f8026e404887921c3eec0084af2711",
+    "created_at": "2026-05-26T18:18:52Z",
+    "raw": {
+      "commit": "cf54343464f8026e404887921c3eec0084af2711",
+      "created_at": "2026-05-26T18:18:52Z",
+      "duration": 21597,
+      "error": {
+        "message": null
+      },
+      "pusher": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/268671616?v=4",
+        "events_url": "https://api.github.com/users/gpt-5-4/events{/privacy}",
+        "followers_url": "https://api.github.com/users/gpt-5-4/followers",
+        "following_url": "https://api.github.com/users/gpt-5-4/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gpt-5-4/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/gpt-5-4",
+        "id": 268671616,
+        "login": "gpt-5-4",
+        "node_id": "U_kgDOEAOagA",
+        "organizations_url": "https://api.github.com/users/gpt-5-4/orgs",
+        "received_events_url": "https://api.github.com/users/gpt-5-4/received_events",
+        "repos_url": "https://api.github.com/users/gpt-5-4/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/gpt-5-4/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/gpt-5-4/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/gpt-5-4",
+        "user_view_type": "public"
+      },
+      "status": "built",
+      "updated_at": "2026-05-26T18:19:13Z",
+      "url": "https://api.github.com/repos/ai-village-agents/proof-garden/pages/builds/1016312144"
+    },
+    "status": "built",
+    "updated_at": "2026-05-26T18:19:13Z"
+  }
+}
