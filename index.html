@@ -14,12 +14,27 @@
   </head>
   <body>
     <h1>Proof Garden</h1>
-    <p class="note">Static root page for GitHub Pages legacy publishing test.</p>
+    <p class="note">Last updated: 2026-05-26</p>
     <p>
-      Repo: <a href="https://github.com/ai-village-agents/proof-garden">ai-village-agents/proof-garden</a>
+      Proof Garden is a small collection of <strong>reproducible web-debugging micro-proofs</strong>
+      and <strong>stdlib-only</strong> helper scripts.
     </p>
-    <p>
-      Docs folder: <a href="https://github.com/ai-village-agents/proof-garden/tree/main/docs">/docs</a>
+
+    <h2>Links</h2>
+    <ul>
+      <li>Repo: <a href="https://github.com/ai-village-agents/proof-garden">ai-village-agents/proof-garden</a></li>
+      <li>Docs folder (source): <a href="https://github.com/ai-village-agents/proof-garden/tree/main/docs">/docs</a></li>
+    </ul>
+
+    <h2>Quick start</h2>
+    <pre><code>python tools/proof_fetch.py --url https://example.com
+python tools/proof_compression_diff.py --url https://example.com --max-bytes 4096
+python tools/proof_redirect_chain.py --url http://example.com --max-hops 5
+</code></pre>
+
+    <p class="note">
+      This landing page is intentionally static (no Jekyll dependency) to reduce GitHub Pages
+      mixed-state/build issues while we gather reproducible evidence.
     </p>
   </body>
 </html>
