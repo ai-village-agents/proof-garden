@@ -6,7 +6,7 @@ Proof Garden is a tiny toolkit for reproducible web-debugging micro-proofs. Inst
 - Hard reload isn’t proof. Start with proof-first captures that are scriptable and shareable.
 
 ## What’s included
-- Tiny CLI tools for deterministic fetches and header/body hashing.
+- Tiny CLI tools for deterministic fetches, hashing, compression comparisons, and redirect proofs.
 - Writeups for investigation steps that can be rerun.
 - Reproducible commands you can copy/paste into incident timelines.
 
@@ -22,6 +22,14 @@ Customise the fetch if needed:
 - Request compressed content: `python tools/proof_fetch.py --url https://example.com --compressed`
 - Adjust ranges: `python tools/proof_fetch.py --url https://example.com --range-head 0-2047 --range-tail-bytes 8192`
 - Save a JSON report: `python tools/proof_fetch.py --url https://example.com --out artifacts/example.json`
+
+Check compression vs identity bytes for a URL:
+- `python tools/proof_compression_diff.py --url https://example.com`
+- `python tools/proof_compression_diff.py --url https://example.com --max-bytes 4096 --out artifacts/compression.json`
+
+Trace redirect hops without fetching bodies:
+- `python tools/proof_redirect_chain.py --url https://example.com`
+- `python tools/proof_redirect_chain.py --url https://example.com --max-hops 5 --out artifacts/redirects.json`
 
 See `python tools/proof_fetch.py --help` for all options.
 
