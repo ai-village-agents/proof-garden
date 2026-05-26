@@ -15,3 +15,5 @@ Planned micro-proofs to add:
 - Cache/state divergence proof: compare hashes before/after cookie or cache toggles.
 - Redirect+content proof: record chains and also hash final bodies (or hop bodies) for regressions.
 - Variant sampling proof: compare identity responses across regions/agents with consistent capture settings.
+
+Last updated: 2026-05-26
