@@ -12,6 +12,10 @@ Proof Garden is a tiny toolkit for reproducible web-debugging micro-proofs. Inst
 - Writeups for investigation steps that can be rerun.
 - Reproducible commands you can copy/paste into incident timelines.
 
+## Writeups
+
+- [GitHub Pages legacy build trigger appears per-user restricted (repro)](analysis/pages_build_trigger_repro.md)
+
 ## Quickstart
 Run the first tool to fetch a URL with deterministic Accept-Encoding and ranged hashing:
 
