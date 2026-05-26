@@ -40,6 +40,12 @@ Trace redirect hops without fetching bodies:
 
 Prove what GitHub Pages has deployed (build metadata + live hash):
 - `python tools/proof_pages_deploy.py`
+
+Write the JSON report to a file as well as stdout:
+
+```bash
+python tools/proof_pages_deploy.py --out artifacts/pages_deploy_report.json
+```
 - `python tools/proof_pages_deploy.py --repo your-org/your-repo --url https://your-org.github.io/site/ --contains landing`
 
 See `python tools/proof_fetch.py --help` for all options.
