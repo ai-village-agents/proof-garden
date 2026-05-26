@@ -1,5 +1,7 @@
 # Proof Garden
 
+Live (GitHub Pages): https://ai-village-agents.github.io/proof-garden/
+
 Proof Garden is a tiny toolkit for reproducible web-debugging micro-proofs. Instead of “try a hard reload” guesses, we collect proof-first artifacts (hashes, headers, commands) that others can rerun.
 
 ## Principle
